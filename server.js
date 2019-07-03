@@ -86,7 +86,7 @@ app.get("/scrape", function(req, res) {
     // Send a message to the client
     res.send("Scrape Complete");
   });
-});
+
 
 // Route for getting all Articles from the db
 app.get("/articles", function(req, res) {
