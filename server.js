@@ -32,6 +32,7 @@ var MONGODB_URI = process.env.MONGOD_URI || "mongodb://localhost/mongoHeadlines"
 mongoose.connect(MONGODB_URI);
 
 // Routes
+var path = require("path");
 module.exports = function(app) {
 app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "../public/index.html"));
